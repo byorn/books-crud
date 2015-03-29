@@ -1,4 +1,4 @@
-[{ "text":"learn angular", "done":true },
- { "text":"build an angular app", "done":false},
- { "text":"something", "done":false },
- { "text":"another todo", "done":true }]
+[{  "id":"1", "name":"learn angular", "authour":"jack robinson" },
+ {  "id":"2", "name":"quick steps", "authour":"david guetta" },
+ {  "id":"3", "name":"how to eat", "authour":"lady onestop" },
+ {  "id":"4", "name":"play guitar", "authour":"steven seagul" }]
