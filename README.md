@@ -1,12 +1,12 @@
-Books CRUD
+<h1>Books CRUD</h1>
 ------------------------------------------------------
 A single page webapp that displays a list of books with CRUD operations.
 
-<h2>Technologies Used:</h2>
---------------------
+Technologies Used:
+------------------
 AngularJS, Spring Boot, MongoDB
 
-<h2>How to Run:</h2>
+How to Run:
 ---------------
 mvn clean install
 mvn spring-boot:run
