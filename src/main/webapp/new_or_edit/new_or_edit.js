@@ -8,25 +8,23 @@ angular.module('myApp.new_or_edit', ['ngRoute'])
             templateUrl: 'new_or_edit/new_or_edit.html',
             controller: 'View2Ctrl'
         }).
-        when('/new_or_edit/:id/:bookname/:bookauthour', {
+        when('/new_or_edit/:bookname/:bookauthour', {
             templateUrl: 'new_or_edit/new_or_edit.html',
             controller: 'View2Ctrl'
         });
     }])
-    .controller('View2Ctrl', function($scope,$routeParams) {
+    .controller('View2Ctrl', function($scope,$routeParams,$http) {
     
-        $scope.id=$routeParams.id;
         $scope.bookname=$routeParams.bookname;
         $scope.bookauthour=$routeParams.bookauthour;
         $scope.submit = function() {
          
             var dataObject = {
-                        id : $scope.id,
-                        bookname: $scope.bookname,
-                        bookauthour:$scope.bookauthour
+                       	bookName: $scope.bookname,
+                        bookAuthour:$scope.bookauthour
             };
             
-            $http.post('/someUrl', dataObject,{}).
+            $http.post('/books', dataObject,{}).
                     success(function(data, status, headers, config) {
                            
                     }).

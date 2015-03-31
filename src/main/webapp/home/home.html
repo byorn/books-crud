@@ -6,9 +6,9 @@
                 <th>Action</th>
         </tr>
         <tr ng-repeat="book in books">
-                <td>{{ book.name }}</td>
-                <td>{{ book.authour }}</td>
-                <td><a href="#/new_or_edit/{{book.id}}/{{book.name}}/{{book.authour}}" class="btn btn-default">edit</a></td>
+                <td>{{ book.bookName }}</td>
+                <td>{{ book.bookAuthour }}</td>
+                <td><a href="#/new_or_edit/{{book.bookName}}/{{book.bookAuthour}}" class="btn btn-default">edit</a></td>
         </tr>
     </table>
  </div>   

@@ -10,9 +10,9 @@ angular.module('myApp.home', ['ngRoute'])
         });
     }])
     .controller('View1Ctrl', function($scope, $http) {
-        $http.get('home/view1.json')
+        $http.get('/books')
             .then(function(res){
-                $scope.books = res.data;                
+                $scope.books = res.data._embedded.books;                
             });
         
         
